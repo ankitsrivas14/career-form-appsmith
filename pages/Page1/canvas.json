@@ -133,7 +133,7 @@
                       "isCustomField": true,
                       "accessor": "experience",
                       "identifier": "customField3",
-                      "position": 4,
+                      "position": 5,
                       "originalIdentifier": "customField3",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -157,7 +157,7 @@
                       "isCustomField": true,
                       "accessor": "cover_letter",
                       "identifier": "customField5",
-                      "position": 5,
+                      "position": 6,
                       "originalIdentifier": "customField5",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -258,6 +258,27 @@
                       "labelTextSize": "0.875rem",
                       "serverSideFiltering": false,
                       "options": "[\n  {\n    \"label\": \"Frontend\",\n    \"value\": \"frontend\"\n  },\n  {\n    \"label\": \"Backend\",\n    \"value\": \"backend\"\n  },\n  {\n    \"label\": \"DevOps\",\n    \"value\": \"devops\"\n  },\n\t{\n    \"label\": \"QA\",\n    \"value\": \"qa\"\n  }\n]"
+                    },
+                    "customField10": {
+                      "children": {},
+                      "dataType": "string",
+                      "fieldType": "Text Input",
+                      "sourceData": "",
+                      "isCustomField": true,
+                      "accessor": "image",
+                      "identifier": "customField10",
+                      "position": 4,
+                      "originalIdentifier": "customField10",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "boxShadow": "none",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": true,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Image (url only)"
                     }
                   },
                   "dataType": "object",
@@ -290,7 +311,8 @@
                 "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                 "boxShadow": "none",
-                "buttonVariant": "PRIMARY"
+                "buttonVariant": "PRIMARY",
+                "iconAlign": "left"
               },
               "dynamicPropertyPathList": [
                 {
@@ -487,6 +509,12 @@
                 },
                 {
                   "key": "schema.__root_schema__.children.customField9.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.customField10.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.customField10.borderRadius"
                 }
               ],
               "borderWidth": "1",
@@ -512,7 +540,7 @@
               "isLoading": false,
               "scrollContents": true,
               "fixedFooter": true,
-              "submitButtonLabel": "Submit",
+              "submitButtonLabel": "Apply",
               "childStylesheet": {
                 "ARRAY": {
                   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
