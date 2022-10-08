@@ -79,17 +79,16 @@
                       "timePrecision": "minute",
                       "labelTextSize": "0.875rem"
                     },
-                    "employee_id": {
+                    "customField1": {
                       "children": {},
-                      "dataType": "number",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.employee_id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Number Input",
-                      "sourceData": 1001,
-                      "isCustomField": false,
-                      "accessor": "employee_id",
-                      "identifier": "employee_id",
-                      "position": 2,
-                      "originalIdentifier": "employee_id",
+                      "dataType": "string",
+                      "fieldType": "Text Input",
+                      "sourceData": "",
+                      "isCustomField": true,
+                      "accessor": "customField1",
+                      "identifier": "customField1",
+                      "position": 3,
+                      "originalIdentifier": "customField1",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "boxShadow": "none",
@@ -99,7 +98,7 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Employee Id"
+                      "label": ""
                     }
                   },
                   "dataType": "object",
@@ -107,8 +106,7 @@
                   "fieldType": "Object",
                   "sourceData": {
                     "name": "John",
-                    "date_of_birth": "20/02/1990",
-                    "employee_id": 1001
+                    "date_of_birth": "20/02/1990"
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -142,11 +140,11 @@
               ],
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-              "topRow": 14,
-              "bottomRow": 67,
+              "topRow": 17,
+              "bottomRow": 66,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
-              "title": "Form",
+              "title": "Please fill the form",
               "type": "JSON_FORM_WIDGET",
               "hideCard": false,
               "animateLoading": true,
@@ -278,15 +276,6 @@
                   "key": "schema.__root_schema__.children.date_of_birth.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.employee_id.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.employee_id.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.employee_id.borderRadius"
-                },
-                {
                   "key": "schema.__root_schema__.defaultValue"
                 },
                 {
@@ -294,14 +283,16 @@
                 },
                 {
                   "key": "schema.__root_schema__.cellBorderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.customField1.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.customField1.borderRadius"
                 }
               ],
               "borderWidth": "1",
-              "sourceData": {
-                "name": "John",
-                "date_of_birth": "20/02/1990",
-                "employee_id": 1001
-              },
+              "sourceData": "{\n  \"name\": \"John\",\n  \"date_of_birth\": \"20/02/1990\"\n}",
               "showReset": true,
               "resetButtonLabel": "Reset",
               "key": "tgwvvtnczp",
@@ -417,12 +408,13 @@
                 "group"
               ],
               "topRow": 2,
-              "bottomRow": 12,
+              "bottomRow": 15,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 8,
               "dynamicBindingPathList": [
                 {
@@ -438,7 +430,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 390,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -454,7 +446,51 @@
                       "key": "accentColor"
                     }
                   ],
-                  "children": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 2,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "Poppins",
+                      "parentColumnSpace": 13.7939453125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Jobs @ CareerSmith",
+                      "key": "ld4lx0oist",
+                      "isDeprecated": false,
+                      "rightColumn": 60,
+                      "textAlign": "CENTER",
+                      "widgetId": "ulylox2ylr",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#fff",
+                      "version": 1,
+                      "parentId": "snxxbmwimy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "3.75rem"
+                    }
+                  ],
                   "key": "4tgorzb1br",
                   "isDeprecated": false,
                   "rightColumn": 481.5,
@@ -472,7 +508,7 @@
               ],
               "borderWidth": "0",
               "key": "x85howkk2r",
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#f87171",
               "isDeprecated": false,
               "rightColumn": 53,
               "widgetId": "qvhsfyyo9b",
