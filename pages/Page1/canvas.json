@@ -321,6 +321,7 @@
               ],
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+              "onSubmit": "{{Create_New_Applicant.run()}}",
               "topRow": 17,
               "bottomRow": 124,
               "fieldLimitExceeded": false,
@@ -330,7 +331,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
               "leftColumn": 8,
               "dynamicBindingPathList": [
                 {
