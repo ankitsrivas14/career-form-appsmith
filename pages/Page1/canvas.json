@@ -321,7 +321,7 @@
               ],
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-              "onSubmit": "{{Create_New_Applicant.run()}}",
+              "onSubmit": "{{Create_New_Applicant.run(() => showAlert('Applied Successfully','success'), () => showAlert('Error'))}}",
               "topRow": 17,
               "bottomRow": 124,
               "fieldLimitExceeded": false,
