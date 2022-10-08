@@ -257,7 +257,7 @@
                       "label": "Applying for",
                       "labelTextSize": "0.875rem",
                       "serverSideFiltering": false,
-                      "options": "[\n  {\n    \"label\": \"Frontend\",\n    \"value\": \"frontend\"\n  },\n  {\n    \"label\": \"Backend\",\n    \"value\": \"backend\"\n  },\n  {\n    \"label\": \"DevOps\",\n    \"value\": \"devops\"\n  },\n\t{\n    \"label\": \"QA\",\n    \"value\": \"qa\"\n  }\n]"
+                      "options": "[\n  {\n    \"label\": \"Frontend\",\n    \"value\": \"frontend\"\n  },\n  {\n    \"label\": \"Backend\",\n    \"value\": \"backend\"\n  },\n\t{\n    \"label\": \"Fullstack\",\n    \"value\": \"fullstack\"\n  },\n  {\n    \"label\": \"DevOps\",\n    \"value\": \"devops\"\n  },\n\t{\n    \"label\": \"QA\",\n    \"value\": \"qa\"\n  }\n]"
                     },
                     "customField10": {
                       "children": {},
